@@ -1,0 +1,85 @@
+.inputContainer {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 8px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::-moz-placeholder {
+  color: transparent;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:-moz-placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 10px;
+  font-weight: 700;
+  border-width: 3px;
+  -o-border-image: linear-gradient(to right, #991611, #350e0e, #e79110);
+     border-image: linear-gradient(to right, #991611, #350e0e, #e79110);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #991611;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+/* demo */
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  background-color: #222222;
+}/*# sourceMappingURL=Input.css.map */

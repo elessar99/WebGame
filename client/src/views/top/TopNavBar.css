@@ -1,0 +1,16 @@
+.topNavBar{
+    display: flex;
+    user-select: none;
+}
+ul {
+    display: flex;
+    font-size: 24px;
+    list-style-type: none;
+    margin: auto;
+    padding: 5px;
+  }
+  ul li {
+    margin: 10px;
+  }
+  
+  

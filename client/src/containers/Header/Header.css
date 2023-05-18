@@ -1,0 +1,12 @@
+.Header{
+    user-select: none;
+    font-size: 20px;
+    display: flex;
+    background-color: black;
+    color: red;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0.1em 1em 0.1em 1em ;
+    justify-content: space-between;
+    border-radius: 20px;
+}

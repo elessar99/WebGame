@@ -1,0 +1,24 @@
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    background: ;
+    
+}
+.navlink{
+    text-shadow: 0px 00px 50px rgb(0, 0, 0);
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+}
+.registerBtn{
+    margin: 12px 0 0 0;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-direction: column;
+}

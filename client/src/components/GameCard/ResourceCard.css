@@ -1,0 +1,13 @@
+.resourceCard{
+    max-width: 200px;
+}
+.resCardFront{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.resCardBack{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}

@@ -1,0 +1,51 @@
+import PropTypes from "prop-types";
+import React, { useState } from 'react';
+import './Button.css';
+
+const Button = ({name,onClick}) => {
+  const [ripples, setRipples] = useState([]);
+
+  const handleClick = (e) => {
+    const ANIMATION_SPEED = 1000;
+
+    const { offsetLeft, offsetTop } = e.target;
+    const x = e.clientX - offsetLeft;
+    const y = e.clientY - offsetTop;
+
+    const newRipple = {
+      x,
+      y,
+      id: new Date().getTime(),
+    };
+
+    setRipples((prevRipples) => [...prevRipples, newRipple]);
+
+    setTimeout(() => {
+      setRipples((prevRipples) => prevRipples.filter((ripple) => ripple.id !== newRipple.id));
+    }, ANIMATION_SPEED);
+  };
+
+  return (
+    <button className="ripple-effect" onClick={handleClick}>
+      {name}
+      {ripples.map((ripple) => (
+        <div
+          key={ripple.id}
+          className="ripple"
+          style={{ left: ripple.x, top: ripple.y }}
+        ></div>
+      ))}
+    </button>
+  );
+};
+
+Button.propTypes = {
+    name: PropTypes.string,
+    onClick: PropTypes.func,
+}
+Button.defaultProps = {
+    name: "-",
+    onClick: ()=>{},
+}
+
+export default Button;
