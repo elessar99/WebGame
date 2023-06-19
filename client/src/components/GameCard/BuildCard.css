@@ -1,0 +1,39 @@
+.buildCardBack{
+    backdrop-filter: blur(3px);
+    padding: 2px;
+}
+.buildCardBody{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 160px;
+    height: 160px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0.85em;
+    color: white;
+}
+.buildNameBody{
+    flex: 0;
+    width: 100%;
+}
+.buildName {
+    flex: 5;
+    max-width: 160px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);    
+    padding: 1px 12px 0px 2px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.buildLvlBody{
+    flex: 3;
+}
+.buildLvl {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1px 2px 0px 8px;
+    border-radius: 15px 0px 0px 15px;
+    
+}

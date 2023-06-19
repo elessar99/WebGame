@@ -13,4 +13,7 @@ ul {
     margin: 10px;
   }
   
-  
+.topNavlink{
+  text-decoration: none;
+  border-bottom: none;
+}

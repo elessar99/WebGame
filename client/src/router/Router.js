@@ -1,7 +1,7 @@
 import {useRoutes} from "react-router-dom"
 
 import "./Router.css";
-import MainPage from "../views/LoginPage";
+import MainPage from "../views/MainPage";
 import Game from "../views/mid/Game";
 import Login from "../containers/loginRegister/Login";
 import Register from "../containers/loginRegister/Register";
@@ -20,15 +20,17 @@ const Router = () => {
         [
             {
                 path: '/',
-                element: <MainPage/>
-            },
-            {
-                path: '/login',
-                element: <Login/>
-            },
-            {
-                path: '/register',
-                element: <Register/>
+                element: <MainPage/>,
+                children: [
+                    {
+                      path: "login",
+                      element: <Login/>,
+                    },
+                    {
+                      path: "register",
+                      element: <Register/>,
+                    },
+                  ],
             },
             {
                 path: "/game",

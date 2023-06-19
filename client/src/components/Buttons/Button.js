@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React, { useState } from 'react';
 import './Button.css';
 
-const Button = ({name,onClick}) => {
+const Button = ({name,onClick,color,bgColor,backgroundColor}) => {
   const [ripples, setRipples] = useState([]);
 
   const handleClick = (e) => {
@@ -26,13 +26,13 @@ const Button = ({name,onClick}) => {
   };
 
   return (
-    <button className="ripple-effect" onClick={handleClick}>
+    <button className="ripple-effect" style={{color:color,background:backgroundColor}} onClick={handleClick} >
       {name}
       {ripples.map((ripple) => (
         <div
           key={ripple.id}
           className="ripple"
-          style={{ left: ripple.x, top: ripple.y }}
+          style={{ left: ripple.x, top: ripple.y , background:bgColor}}
         ></div>
       ))}
     </button>
@@ -42,9 +42,15 @@ const Button = ({name,onClick}) => {
 Button.propTypes = {
     name: PropTypes.string,
     onClick: PropTypes.func,
+    color: PropTypes.string,
+    bgColor: PropTypes.string,
+    backgroundColor: PropTypes.string,
 }
 Button.defaultProps = {
+    color: "#fff",
+    bgColor: "#fff",
     name: "-",
+    backgroundColor: "back",
     onClick: ()=>{},
 }
 

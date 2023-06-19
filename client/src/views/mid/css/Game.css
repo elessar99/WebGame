@@ -1,5 +1,5 @@
 .fullGamePage{
-    background-image: url("../../../img/wp2.jpg");
+    background-image: url("../../../img/wallPaper/wp2.jpg");
     min-width: 100vw;
     min-height: 100vh;
     background-attachment: fixed;
@@ -8,4 +8,14 @@
 }
 .gamePage{
     
+}
+.gameBody{
+    margin: auto;
+    display: flex;
+    width: 1250px;
+}
+.gameMid{
+}
+.gameLeft{
+    border-right: 3px white solid;
 }

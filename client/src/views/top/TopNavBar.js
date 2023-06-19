@@ -1,4 +1,5 @@
 import Button from "../../components/Buttons/Button";
+import { NavLink } from "react-router-dom";
 import "./TopNavBar.css"
 const TopNavBar = () =>{
     return (
@@ -6,31 +7,49 @@ const TopNavBar = () =>{
       <div className="topNavBar">
         <ul>
           <li>
-            <Button name={"Overview"}/>
+            <NavLink className={"topNavlink"} to={"/game/overview"}>
+              <Button name={"Overview"}/>
+            </NavLink>
           </li>
           <li>
-            <Button name={"Resources"}/>
+            <NavLink className={"topNavlink"} to={"/game/resources"}>
+              <Button name={"Resources"}/>
+            </NavLink>
           </li>
           <li>
-            <Button name={"Facilities"}/>
+            <NavLink className={"topNavlink"} to={"/game/facilities"}>
+              <Button name={"Facilities"}/>
+            </NavLink>
           </li>
           <li>
-            <Button name={"Merchant"}/>
+            <NavLink className={"topNavlink"} to={"/game/merchant"}>
+              <Button name={"Merchant"}/>
+            </NavLink>
           </li>
           <li>
-            <Button name={"Shipyard"}/>
+            <NavLink className={"topNavlink"} to={"/game/shipyard"}>
+              <Button name={"Shipyard"}/>
+            </NavLink>
           </li>
           <li>
-            <Button name={"Pvp"}/>
+            <NavLink className={"topNavlink"} to={"/game/pvp"}>
+              <Button name={"Pvp"}/>
+            </NavLink>
           </li>
           <li>
-            <Button name={"Raid"}/>
+            <NavLink className={"topNavlink"} to={"/game/raid"}>
+              <Button name={"Raid"}/>
+            </NavLink>
           </li>
           <li>
-            <Button name={"Expedition"}/>
+            <NavLink className={"topNavlink"} to={"/game/expedition"}>
+              <Button name={"Expedition"}/>
+            </NavLink>
           </li>
           <li>
-            <Button name={"Plunder"}/>
+            <NavLink className={"topNavlink"} to={"/game/plunder"}>
+              <Button name={"Plunder"}/>
+            </NavLink>
           </li>
         </ul>
       </div>

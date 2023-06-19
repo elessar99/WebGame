@@ -1,0 +1,8 @@
+
+.resourceBody{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+    max-width: 166px;
+}

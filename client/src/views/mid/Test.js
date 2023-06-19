@@ -1,10 +1,10 @@
-import ResourceCard from "../../components/GameCard/ResourceCard";
+import ResourceBar from "../../containers/ResourceBar/ResourceBar.js";
 import "./css/Test.css"
 const Test = () =>{
     return (
     <>
     <div className="testpage">
-      <ResourceCard/>
+
     </div>
     </>
   );

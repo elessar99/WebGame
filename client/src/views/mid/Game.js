@@ -12,6 +12,7 @@ import Raid from "./Raid";
 import Expedition from "./Expedition";
 import Plunder from "./Plunder";
 import Test from "./Test";
+import ResourceBar from "../../containers/ResourceBar/ResourceBar";
 const Game = () =>{
   const location = useLocation();
   let component;
@@ -41,11 +42,11 @@ const Game = () =>{
     <Header/>
     <div className="gamePage">
       <div className="gameTop">
-        
+        <TopNavBar/>
       </div>
       <div className="gameBody">
         <div className="gameLeft"> 
-          <TopNavBar/>
+          <ResourceBar/>
         </div>  
         <div className="gameMid">
           {component}

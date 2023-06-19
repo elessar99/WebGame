@@ -6,7 +6,7 @@
     user-select: none;
     justify-content: center;
     align-items: center;
-    background: ;
+    backdrop-filter: blur(8px);
     
 }
 .navlink{

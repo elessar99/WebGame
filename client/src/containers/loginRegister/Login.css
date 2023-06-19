@@ -3,5 +3,17 @@
     flex-direction: column;
     width: 300px;
     height: 300px;
-    
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.navlink{
+}
+.navlink:hover{
+    display: inline-block;
+    background: linear-gradient(to right, #F8DA7A, #FC6E08, #f0c975);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.loginBtn.ripple-effect{
+    color: red;
 }

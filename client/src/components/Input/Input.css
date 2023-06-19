@@ -15,7 +15,7 @@
   font-family: inherit;
   width: 100%;
   border: 0;
-  border-bottom: 2px solid #9b9b9b;
+  border-bottom: 2px solid #fff;
   outline: 0;
   font-size: 1.3rem;
   color: #fff;
@@ -46,15 +46,15 @@
   display: block;
   transition: 0.2s;
   font-size: 1rem;
-  color: #9b9b9b;
+  color: #fff;
 }
 
 .form__field:focus {
   padding-bottom: 10px;
   font-weight: 700;
   border-width: 3px;
-  -o-border-image: linear-gradient(to right, #991611, #350e0e, #e79110);
-     border-image: linear-gradient(to right, #991611, #350e0e, #e79110);
+  -o-border-image: linear-gradient(to right, #FC6E08, #F8DA7A, #FC6801);
+     border-image: linear-gradient(to right, #FC6E08, #F8DA7A, #FC6801);
   border-image-slice: 1;
 }
 .form__field:focus ~ .form__label {
@@ -65,6 +65,9 @@
   font-size: 1rem;
   color: #991611;
   font-weight: 700;
+  background: linear-gradient(to right, #F8DA7A, #FC6E08, #f0c975);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* reset input */

@@ -1,0 +1,30 @@
+
+.merchantUp{
+    display: flex;
+    width: 700px;
+}
+.merchantCards{
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 900px;
+    width: 200%;
+}
+.buysell{
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px white solid;
+    margin-bottom: 0.5em;
+    background-color: rgba(0, 0, 0, 0.15);
+    background-color: w;
+    text-shadow: 1px 1px 5px black;
+    padding: 2px;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+.merchantBalance{
+
+}
+.merchantResult{
+
+}

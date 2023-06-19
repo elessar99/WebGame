@@ -1,0 +1,38 @@
+.merchantCardBody{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1em 0.5em 1em;
+    font-size: 0.85em;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 3px black solid;
+    border-radius: 20px;
+}
+.imgContainerMC{
+}
+.imgMC{
+    width: 130px;
+}
+.nameMC{
+    margin: 0.2em;
+}
+.inputContainerMC{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.3em;
+}
+.inputMc{
+    background-color: rgba(180, 180, 180, 0.4);
+    border: 2px white solid;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    padding: 2px 0 2px 5px;
+    width: 120px;
+}
