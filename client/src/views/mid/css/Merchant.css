@@ -1,7 +1,7 @@
 
 .merchantUp{
     display: flex;
-    width: 700px;
+    width: 1000px;
 }
 .merchantCards{
     display: flex;
@@ -22,9 +22,65 @@
     backdrop-filter: blur(5px);
     border-radius: 20px;
 }
+.amountM{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+.sellM{
+    color: rgb(43, 255, 0);
+    border: 3px rgb(43, 255, 0) solid;
+}
+.buyM{
+    color: rgb(255, 26, 26);
+    border: 3px rgb(255, 26, 26) solid;
+}
 .merchantBalance{
-
+    margin: 1em;
+}
+.merchantBalanceBlock{
+    display: flex;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px black solid;
+    border-radius: 20px;
+    margin: 1em 0;
+    
+}
+.BalanceBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.8em 1em;
+}
+.balanceImg{
+    height: 70px;
+    width: 70px;
+}
+.BalanceEquality{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2em;
 }
 .merchantResult{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0.5em 0;
+}
+.merchantSellBuy{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.txRed{
+   color: rgb(255, 26, 26); 
+}
+.txGreen{
+    color: rgb(43, 255, 0);
 }

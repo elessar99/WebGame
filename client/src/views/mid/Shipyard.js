@@ -14,7 +14,7 @@ const Shipyard = () =>{
   const [unit, setUnit] = useState(build.ship.windchaser);
   const iron = 134;
   const wood = 400;
-  const curse = 500;
+  const curse = 2415;
   const [unitValue, setUnitValue] = useState(1);
   const handleChange = (e) => {
     const value = e.target.value;
@@ -59,7 +59,7 @@ const Shipyard = () =>{
                   <img className="needImg" src={require("../../img/resource/wood.png")}/>
                 </div>
                 <div className="needInfo">
-                  {required.log}
+                  {required.log * unitValue}
                 </div>
               </div >
               {!isCurse && (<div className={ironControl ? "needed ntrue" : "needed nfalse"}>
@@ -67,7 +67,7 @@ const Shipyard = () =>{
                 <img className="needImg" src={require("../../img/resource/iron.png")}/>
                 </div>
                 <div className="needInfo">
-                  {required.iron}
+                  {required.iron * unitValue}
                 </div>
               </div>)}
               
@@ -76,7 +76,7 @@ const Shipyard = () =>{
                 <img className="needImg" src={require("../../img/resource/curse.png")}/>
                 </div>
                 <div className="needInfo">
-                  {required.curse}
+                  {required.curse * unitValue}
                 </div>
               </div>)}
             </div>
@@ -99,7 +99,7 @@ const Shipyard = () =>{
                      Build Units:
                      <input className="unitInput" type="number" min={1} value={unitValue} onChange={handleChange}></input>
                     </div>
-                  <button className="buildBtn">
+                  <button className={isCurse ? (curseControl && woodControl ? "buildBtn ntrue" : "buildBtn nfalse") : (woodControl && ironControl ? "buildBtn ntrue" : "buildBtn nfalse")}>
                     <div>
                       Build
                     </div>
